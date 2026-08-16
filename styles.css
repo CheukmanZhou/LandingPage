@@ -11,6 +11,8 @@ body {
     margin: 0;
     background-color: white;
     font-family: var(--font);
+    width: 100%;
+    min-width: 1300px;
 }
 
 /* Shared button */
@@ -57,7 +59,7 @@ body {
 .nav-links a {
     color: var(--text-muted);
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: 60px;
     text-decoration: none;
 }
 
@@ -99,11 +101,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
 }
 
-.hero-image p {
-    color: var(--text-light);
+.hero-image img {
+    width: 500px;
+    flex: auto;
+    border: 2px solid var(--text-muted);
+    border-radius: 8px;
 }
 
 /* Info section */
@@ -138,12 +142,11 @@ body {
     padding: 15px;
 }
 
-.info-img .image {
+.info-img img {
     flex: auto;
     border: 3px solid var(--accent);
     border-radius: 8px;
     height: 150px;
-    width: 150px;
 }
 
 .info-img p {
